@@ -1,5 +1,3 @@
-import uvicorn
+# This file is kept for the workflow configuration
+# The actual app is in app.py
 from app import app
-
-if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=5000, reload=True)
