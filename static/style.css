@@ -1,0 +1,108 @@
+/* Custom styles for Sales Analytics Platform */
+body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.card {
+    border: 1px solid var(--bs-secondary);
+    background-color: var(--bs-dark);
+}
+
+.card-header {
+    background-color: var(--bs-secondary);
+    border-bottom: 1px solid var(--bs-gray-600);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.alert {
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.table-dark {
+    --bs-table-bg: var(--bs-dark);
+}
+
+.form-control:focus {
+    border-color: var(--bs-info);
+    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25);
+}
+
+.btn-group-sm > .btn, .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+.compress-result {
+    background-color: var(--bs-gray-800);
+    border: 1px solid var(--bs-gray-600);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.stat-card {
+    background-color: var(--bs-gray-800);
+    border: 1px solid var(--bs-gray-600);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bs-info);
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--bs-gray-400);
+}
+
+.customer-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.sales-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--bs-info);
+}
+
+.table-responsive {
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
