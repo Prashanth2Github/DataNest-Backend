@@ -1,6 +1,6 @@
 # DataNest Backend 
 
-This project is a prototype backend system for **DataNest**, a fictional SaaS startup building analytics dashboards for small businesses. It is developed as part of the **XTechOn Backend Developer Intern Assignment**.
+This project is a prototype backend system for DataNest, a fictional SaaS startup building analytics dashboards for small businesses. It was developed as a personal project to showcase backend development skills**.
 
 ---
 
@@ -193,13 +193,6 @@ pytest tests/
 - **404 errors**: Ensure correct endpoint path (`/auth`, `/sales`, `/api`)
 - **JWT issues**: Ensure token is provided via `Authorization: Bearer <token>`
 - **DB issues**: Re-run `create_db.py` and `create_users.py`
-
----
-
-## 📬 Submission
-
-- Upload code to GitHub or Zip folder (`zip -r datanest-backend.zip .`)
-- Send to: `career@xtechon.com` with subject `Back-end Hiring Assignment - [Your Name]` by **May 30, 2025**
 
 ---
 
