@@ -199,5 +199,7 @@ pytest tests/
 
 ## 👨‍💻 Author
 
-[Your Name]  
-📅 Date: June 2, 2025
+**Prashanth Bonkuru**  
+📧 bonkuruprashanth05@gmail.com  
+🌐 [GitHub: Prashanth2Github](https://github.com/Prashanth2Github)
+
