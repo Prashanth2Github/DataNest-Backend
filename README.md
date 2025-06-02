@@ -126,7 +126,7 @@ python create_users.py
 uvicorn app:app --reload
 ```
 
-Visit: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+Visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
