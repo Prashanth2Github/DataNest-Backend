@@ -61,6 +61,12 @@ FeatureRichPlatform/
 ├── wsgi.py                     # WSGI configuration
 ```
 
+## 📄 Project Output
+
+The final output of the project is available in the PDF report below:
+
+**➡ [Download DataNest Backend Output (PDF)](./DataNest%20Backend%20Output.pdf)**
+
 ---
 
 ## 🛠️ Setup Instructions
