@@ -1,49 +1,80 @@
 /* Custom styles for Sales Analytics Platform */
 body {
-    background-color: var(--bs-dark);
-    color: var(--bs-light);
+    background-color: #121212; /* Very dark background */
+    color: #eeeeee; /* Bright near-white text */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card {
-    border: 1px solid var(--bs-secondary);
-    background-color: var(--bs-dark);
+    border: 1px solid #666666; /* Medium gray border */
+    background-color: #1f1f1f; /* Dark gray card background */
+    color: #eeeeee; /* Bright text inside cards */
 }
 
 .card-header {
-    background-color: var(--bs-secondary);
-    border-bottom: 1px solid var(--bs-gray-600);
+    background-color: #333333; /* Darker gray */
+    border-bottom: 1px solid #555555; /* Border for separation */
+    color: #ffffff; /* White text */
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
+    color: #00d1ff; /* Bright cyan */
+}
+
+.navbar-brand:hover {
+    color: #00a6cc; /* Slightly darker cyan on hover */
+}
+
+.navbar-nav .navbar-text {
+    color: #cccccc; /* Light gray for user info */
 }
 
 .alert {
     border-radius: 0.375rem;
     margin-bottom: 1rem;
+    color: #222222;
+    background-color: #f8d7da; /* Soft red alert bg */
+    border-color: #f5c2c7;
 }
 
 .table-dark {
-    --bs-table-bg: var(--bs-dark);
+    --bs-table-bg: #1f1f1f; /* Match card background */
+    color: #eeeeee;
+}
+
+.form-control {
+    background-color: #2b2b2b;
+    border: 1px solid #555555;
+    color: #eeeeee;
+}
+
+.form-control::placeholder {
+    color: #bbbbbb;
 }
 
 .form-control:focus {
-    border-color: var(--bs-info);
-    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25);
+    border-color: #00d1ff; /* Bright cyan */
+    box-shadow: 0 0 0 0.25rem rgba(0, 209, 255, 0.5);
+    background-color: #353535;
+    color: #ffffff;
 }
 
 .btn-group-sm > .btn, .btn-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.25rem;
+    color: #eeeeee;
 }
 
 .compress-result {
-    background-color: var(--bs-gray-800);
-    border: 1px solid var(--bs-gray-600);
+    background-color: #292929; /* Dark gray */
+    border: 1px solid #666666;
     border-radius: 0.375rem;
     padding: 1rem;
     margin-top: 1rem;
+    color: #eeeeee;
+    font-family: monospace;
 }
 
 .stats-grid {
@@ -53,32 +84,33 @@ body {
 }
 
 .stat-card {
-    background-color: var(--bs-gray-800);
-    border: 1px solid var(--bs-gray-600);
+    background-color: #292929;
+    border: 1px solid #666666;
     border-radius: 0.375rem;
     padding: 1rem;
     text-align: center;
+    color: #eeeeee;
 }
 
 .stat-value {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--bs-info);
+    font-weight: 700;
+    color: #00d1ff; /* Bright cyan */
 }
 
 .stat-label {
     font-size: 0.875rem;
-    color: var(--bs-gray-400);
+    color: #bbbbbb; /* Light gray */
 }
 
-.customer-list {
+.customer-list, .sales-list {
     max-height: 300px;
     overflow-y: auto;
-}
-
-.sales-list {
-    max-height: 250px;
-    overflow-y: auto;
+    color: #eeeeee;
+    background-color: #222222;
+    border: 1px solid #555555;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
 }
 
 .loading {
@@ -87,7 +119,8 @@ body {
 }
 
 .nav-pills .nav-link.active {
-    background-color: var(--bs-info);
+    background-color: #00d1ff; /* Bright cyan */
+    color: #121212;
 }
 
 .table-responsive {
@@ -105,4 +138,92 @@ body {
     .card-body {
         padding: 1rem;
     }
+}
+
+/* Buttons custom colors */
+.btn-primary {
+    background-color: #00d1ff;
+    border-color: #009ecc;
+    color: #121212;
+    font-weight: 600;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #009ecc;
+    border-color: #007a99;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    border-color: #3a8a40;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-success:hover, .btn-success:focus {
+    background-color: #3a8a40;
+    border-color: #2e6a34;
+}
+
+.btn-info {
+    background-color: #2196f3;
+    border-color: #176fcc;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-info:hover, .btn-info:focus {
+    background-color: #176fcc;
+    border-color: #105999;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    border-color: #cc7a00;
+    color: #121212;
+    font-weight: 600;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-color: #cc7a00;
+    border-color: #995800;
+}
+
+/* Navbar buttons */
+#logoutBtn {
+    color: #00d1ff;
+    border-color: #00a6cc;
+}
+
+#logoutBtn:hover {
+    background-color: #00a6cc;
+    color: #ffffff;
+}
+
+/* Links */
+a {
+    color: #00d1ff;
+}
+
+a:hover {
+    color: #009ecc;
+}
+
+/* Scrollbar styles for better visibility */
+.customer-list::-webkit-scrollbar,
+.sales-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.customer-list::-webkit-scrollbar-track,
+.sales-list::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+.customer-list::-webkit-scrollbar-thumb,
+.sales-list::-webkit-scrollbar-thumb {
+    background-color: #00d1ff;
+    border-radius: 10px;
+    border: 2px solid #222222;
 }
