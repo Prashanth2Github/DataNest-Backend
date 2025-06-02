@@ -1,4 +1,4 @@
-# DataNest Backend Assignment
+# DataNest Backend 
 
 This project is a prototype backend system for **DataNest**, a fictional SaaS startup building analytics dashboards for small businesses. It is developed as part of the **XTechOn Backend Developer Intern Assignment**.
 
